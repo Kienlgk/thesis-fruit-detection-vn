@@ -8,7 +8,7 @@ Dựa trên kết quả thu được từ 2 tập dữ liệu đánh giá, ta c�
 	\item Đối với hình ảnh có những trái to, rõ ràng, mô hình mạng đã nhận diện được chính xác và khá đầy đủ
 	\item Đối với những hình ảnh cây có quá nhiều lá, lá che phần lớn các trái, mô hình mạng nhận diện được đúng các trái, tuy nhiên vẫn còn nhận dư và nhận thiếu các trái
 	\item Cần cải thiện đối với những trường hợp trái bị che bởi cành, lá dẫn đến không nhận diện được, đưa tới kết quả là thiếu trái, được thể hiện bởi False Negative
-	\item Các trường hợp nhận nhầm các vùng cành là thành trái (False Positive) cũng rất đáng được quan tâm và cải thiện
+	\item Các trường hợp nhận nhầm các vùng cành lá thành trái (False Positive) cũng rất đáng được quan tâm và cải thiện
 \end{itemize}
 Để giải quyết hai vấn đề trên, nhóm đã đề xuất hướng giải quyết là đưa những vùng nhận diện được là trái bưởi qua các một CNN để phân loại.
 Nhóm đã chuẩn bị tập dữ liệu với 14496 hình dùng cho việc huấn luyện và 7248 hình dùng cho việc kiểm tra, với hai class là có trái và không trái.
